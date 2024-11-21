@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x4 Chess Board</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .black {
+            background-color: black;
+        }
+        .white {
+            background-color: white;
+        }
+        .dot {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .black-dot {
+            background-color: black;
+        }
+        .white-dot {
+            background-color: white;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td class="black"><span class="dot white-dot"></span></td>
+                <td class="white"><span class="dot black-dot"></span></td>
+                <td class="black"><span class="dot white-dot"></span></td>
+                <td class="white"><span class="dot black-dot"></span></td>
+            </tr>
+            <tr>
+                <td class="white"><span class="dot black-dot"></span></td>
+                <td class="black"><span class="dot white-dot"></span></td>
+                <td class="white"><span class="dot black-dot"></span></td>
+                <td class="black"><span class="dot white-dot"></span></td>
+            </tr>
+            <tr>
+                <td class="black"><span class="dot white-dot"></span></td>
+                <td class="white"><span class="dot black-dot"></span></td>
+                <td class="black"><span class="dot white-dot"></span></td>
+                <td class="white"><span class="dot black-dot"></span></td>
+            </tr>
+            <tr>
+                <td class="white"><span class="dot black-dot"></span></td>
+                <td class="black"><span class="dot white-dot"></span></td>
+                <td class="white"><span class="dot black-dot"></span></td>
+                <td class="black"><span class="dot white-dot"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
