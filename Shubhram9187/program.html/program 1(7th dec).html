@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 1</title>
+    <style>
+        fieldset{
+            border: none;
+            background-color: #aaa;
+            width: 400px;
+        }
+        legend{
+            text-align: right;
+        }
+        progress:-wenkit-progress-bar{
+            height: 10px;
+            background: #dfdfdf;
+            box-shadow: 0 2px 3px rgba(0, 0,0, 0.2) inset;
+
+        }
+        progress{
+            height: 10px;
+            background: #dfdfdf;
+            box-shadow: 0 2px 3px rgba(0, 0,0,0.2) inset;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Oatmeal Varieties</legend>
+        <label><input type="radio" name="applecinnamon">Apple Cinnamon</label>
+        <label><input type="radio" name="nuttycrunch">Nutty Crunch</label>
+        <label><input type="radio" name="brownsugar">Brown Sugar</label>
+    </fieldset>
+    <p>
+        <label>Enter your <a href="#">name</a>
+        <input type="text" name="username" tabindex="1"></label>
+    </p>
+    <p>
+        <label>Enter your <a href="#">Age</a>
+            <input type="text" name="age" tabindex="2"></label>
+    </p>
+    <p>
+        <input type="submit" tabindex="1">
+    </p>
+    <p>What are you interests?</p>
+    <label>Sports <input type="checkbox" name="sports" accesskey="S"></label>
+    <label>Music <input type="checkbox" name="music" accesskey="M"></label>
+    <label>Television <input type="checkbox" name="tv" accesskey="T"></label>
+    <Label for="question42">What is the meaning of life?</Label>
+    <textarea  id="question42" disabled>
+        Enter your answer here.
+    </textarea>
+    <label for="month">This month</label>
+    <input type="text" id="month" value="September" readonly>
+    <p>Progress task 1:
+        <progress id="prog1" value="0">0%</progress>
+
+    </p>
+    <p>Progress task 2:
+        <progress id="prog2" value="45" max="100">45%</progress>
+    </p>
+    <p>Progress task 3:
+        <progress id="prog3" value="98" max="100">98%</progress>
+        </p>
+        <p>
+            Jetta:
+            <meter min="0" max="14.2" high="13.5" low="3" optimum="14" value="2.5">2.5gallonnsis getting low,we should get gas!
+
+        </p>
+        <p>
+            Tundra:
+            <meter min="0" max="22" high="20" low="5" optimum="21" value="14">14 gallons</meter>is okay,we don't need gas yet.
+
+        </p>
+        <p>
+            Vespa:
+            <meter min="0" max="5" high="4.5" low="1" optimum="4.6" value="4.7">4.7gallons</meter> is practically ull,you just filled up!
+        </p>
+</body>
+</html>
