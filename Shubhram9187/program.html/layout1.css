@@ -1,0 +1,52 @@
+body{
+    font-family: Optima, sans-serif;
+}
+a:link{
+    color: #055;
+}
+a:visited{
+    color: #404;
+}
+header{
+    text-align: center;
+    color: white; background-color: #055;
+}
+header h1,header h2{
+    margin: 0;
+}
+header h1{
+    color: #FFFF00; font-size: 250%;
+}
+header h2{
+    font-weight: normal;
+    font-style: italic;
+}
+#sitenav{
+    color: white;
+    background-color: #404;
+}
+#sitenav ol{
+    font-size: 90%;
+    text-align: center;
+}
+#sitenav li{
+    margin-left: 1em;
+    border-left: 1px solid #000;
+}
+#sitenav li a:link, #sitenav li a:visited{
+    color: white;
+    text-decoration: none;
+}
+#sitenav li a:hover{
+    color: #000000;}
+    footer{
+        background-color: #404;
+        color: white;
+        padding: 0.5em 5em;
+    }
+    footer p{
+        margin: 0em;
+        font-size: 85%;}
+        footer p:link, footer p:visited{
+            color: #000000;
+        }
