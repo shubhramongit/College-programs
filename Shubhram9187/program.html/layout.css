@@ -1,0 +1,47 @@
+body{
+    margin: 0; padding: 0;
+    background-color: silver;
+}
+header{
+    background-color: black;
+    color: white;
+}
+#sitenav ol{
+    padding: 0;
+    margin: 0; display: inline;
+}
+#sitenav li{
+    display: inline; padding-left: 1em;
+    margin-left: 1em;
+    border-left: 1px solid black;}
+
+    #sitenav li:first-child{
+        padding-left: 0; border-left: none;
+        margin-left: 0;
+    }
+    #sitenav li a{
+        color: white;
+    }
+    #main{
+        padding: 0 12em 2em 2em;
+        position: relative; background-color: gray;
+    }
+    #content{
+        background-color: white;
+    }
+    #sidebar{
+        position: absolute; width: 10em;
+        right: 1em; top: 1em;
+    }
+    #sidebar h3{ color: white;
+    background-color: black;
+    }
+    #sidebar ol{
+
+        margin: 0 0 1em 0;
+        background-color: white;
+        border: 2px solid black;
+    }
+    footer{
+        background-color: white;
+    }
