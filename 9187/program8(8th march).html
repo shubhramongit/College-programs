@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Background Color</title>
+  <style>
+    /* Define the CSS class with the desired background color */
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+  <script src="jquery.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Add a click event listener to the button
+      $("#toggleButton").click(function() {
+        // Toggle the 'highlight' class on the <p> element
+        $("p").toggleClass("highlight");
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="toggleButton">Toggle Background</button>
+  <p>This is a sample paragraph.</p>
+</body>
+</html>
