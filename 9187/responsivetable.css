@@ -1,0 +1,10 @@
+/* styles for all devices */
+table {
+    border-collapse: collapse;
+    font-size: 14px; }
+    /* zebra stripe the table */
+    table tr:nth-child(2n+1) { background-color: #dfdfdf; }
+    /* styles for devices larger than 650px wide */
+    @media screen and ( min-width:651px ) {
+    table { font-size: 16px; }
+    }
