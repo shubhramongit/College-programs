@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter your number
+    <input type="num" class="n1"></label>
+    <button id="inc">INCREMENT</button>
+    <button id="dec">DECREMENT</button>
+    <p id="display"></p>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#inc').click(function(){
+                var num = $('.n1').val();
+                num++;
+                $('#display').text("The increment of number is "+num);
+            })
+            $('#dec').click(function(){
+                var num = $('.n1').val();
+                num--;
+                $('#display').text("The decrement of number is "+num);
+            })
+        })
+    </script>
+</body>
+</html>
