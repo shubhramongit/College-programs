@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comprehensive Combined Program</title>
+    <!-- Use your given jQuery file -->
+    <script src="jquery.js"></script>
+    <style>
+        #extraContent {
+            display: none;
+        }
+
+        #imageJS, #imageJQuery {
+            display: none;
+        }
+    </style>
+    <script>
+        // JavaScript functionality to show/hide image
+        function showImageJS() {
+            document.getElementById("imageJS").style.display = "block";
+        }
+
+        function hideImageJS() {
+            document.getElementById("imageJS").style.display = "none";
+        }
+
+        // Functionality for "Read More/Read Less"
+        function toggleContent() {
+            const extraContent = document.getElementById("extraContent");
+            const button = document.getElementById("toggleContentButton");
+
+            if (extraContent.style.display === "none") {
+                extraContent.style.display = "inline";
+                button.textContent = "Read Less";
+            } else {
+                extraContent.style.display = "none";
+                button.textContent = "Read More";
+            }
+        }
+
+        $(document).ready(function() {
+            // jQuery functionality to toggle paragraph
+            $("#toggleParagraphButton").click(function() {
+                $("#paragraph").toggle();
+            });
+
+            // jQuery functionality to show/hide image
+            $("#showImageButton").click(function() {
+                $("#imageJQuery").show();
+            });
+
+            $("#hideImageButton").click(function() {
+                $("#imageJQuery").hide();
+            });
+
+            // Add a new paragraph dynamically
+            $("#addParagraphButton").click(function() {
+                $("<p>This is a dynamically added paragraph.</p>").insertAfter("#existingParagraph");
+            });
+        });
+    </script>
+</head>
+<body bgcolor="hotpink">
+    <h1>Comprehensive Functionalities Program</h1>
+
+    <!-- Toggle Paragraph -->
+    <h2>Toggle Paragraph using jQuery</h2>
+    <p id="paragraph">This is the paragraph that can be hidden or shown using jQuery.</p>
+    <button id="toggleParagraphButton">Hide/Show Paragraph</button>
+
+    <hr>
+
+    <!-- Show/Hide Image using JavaScript -->
+    <h2>Show/Hide Image using JavaScript</h2>
+    <button onclick="showImageJS()">Show Image</button>
+    <button onclick="hideImageJS()">Hide Image</button>
+    <br><br>
+    <img id="imageJS" src="https://via.placeholder.com/200" alt="JavaScript Image">
+
+    <hr>
+
+    <!-- Show/Hide Image using jQuery -->
+    <h2>Show/Hide Image using jQuery</h2>
+    <button id="showImageButton">Show Image</button>
+    <button id="hideImageButton">Hide Image</button>
+    <br><br>
+    <img id="imageJQuery" src="https://via.placeholder.com/200" alt="jQuery Image">
+
+    <hr>
+
+    <!-- Read More/Read Less -->
+    <h2>Read More/Read Less Example</h2>
+    <p>
+        This is the first part of the paragraph.
+        <span id="extraContent">Here is the additional text revealed when you click "Read More".</span>
+    </p>
+    <button id="toggleContentButton" onclick="toggleContent()">Read More</button>
+
+    <hr>
+
+    <!-- Add New Paragraph Dynamically -->
+    <h2>Add New Paragraph Dynamically using jQuery</h2>
+    <p id="existingParagraph">This is the existing paragraph.</p>
+    <button id="addParagraphButton">Add New Paragraph</button>
+</body>
+</html>
