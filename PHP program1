@@ -1,0 +1,22 @@
+<?php
+	$txt= "Hello, World!";
+	$x= 5;
+	$y =5;
+	echo $x**$y;
+	var_dump($x==$y);
+	 $x=100;
+	 $y="100";
+	 var_dump($x!==$y);
+	 var_dump($x===$y);
+	 var_dump($x==$y);
+	 $txt1="Hello";
+	 $txt2="world!";
+	 echo $txt1.$txt2; 
+	 $myname = "Brian";
+	 $myage = 37;
+	 echo "a: " . 73      . "<br>";
+	 echo "b: " . "Hello" . "<br>";
+	 echo "c: " . FALSE   . "<br>";
+	 echo "d: " . $myname . "<br>";
+	 echo "e: " . $myage  . "<br>";
+?>
