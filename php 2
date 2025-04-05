@@ -1,0 +1,64 @@
+<?php
+	$p = 10000;
+	$r = 3;
+	$t = 4;
+	$si = ($p*$r*$t)/100;
+	echo ("the simple interest is ") .$si . "\n"; 
+	
+  //day of the week
+  $day = 0;
+  switch ($day)
+  {
+    case 0:
+      echo "Today is sunday" . "\n";
+      break;
+    case 1:
+      echo "Today is monday";
+      break;
+    case 2:
+      echo "Today is tuesday";
+      break;
+    case 3:
+      echo "Today is wednesday";
+      break;
+    case 4:
+      echo "Today is thursday";
+      break;
+    case 5:
+      echo "Today is friday";
+      break;
+    case 6:
+      echo "Today is saturday";
+      break;
+  }
+  
+  //swaping numbers;
+  $a = 1;
+  $b = 2;
+  $temp = $a;
+  $a = $b;
+  $b = $temp;
+  echo ("a: ") .$a . "\n";
+  echo ("b: ") .$b . "\n";
+  
+  //sum of digits
+  $sum = 0;
+  $num = 123;
+  while($num!=0)
+  {
+    $dig = $num%10;
+    $sum = $sum + $dig;
+    $num = $num/10;
+  }
+  echo "the sum of digits is" . $sum;
+?>
+
+
+
+
+
+
+
+
+
+
