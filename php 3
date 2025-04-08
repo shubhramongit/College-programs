@@ -49,6 +49,12 @@ $state_capitals = array(
       echo "$i is odd"."\n";
     }
   }
+  //for each loop
+  $colors = array('red','green','blue');
+  foreach ($colors as $color)
+  {
+    echo $color . "\n";
+  }
 ?>
 
 
