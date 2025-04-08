@@ -31,12 +31,28 @@ $state_capitals = array(
    $color = $stuff['colors'][1];
    $number = $stuff['numbers'][0];
   $stuff['numbers'][3] = 'four';
-  echo $stuff['numbers'][3];
+  echo $stuff['numbers'][3] ."\n";
   //questions
   $i = 1;
   while($i<=10)
   {
-    echo $i;
+    echo $i ."\n";
     $i++;
   }
+  //questions2
+    $number = array('1','2','3','4','5');
+  for($i=1;$i<=$number[4];$i++){
+    if($i%2==0){
+      echo "$i is even"."\n";
+    }
+    else{
+      echo "$i is odd"."\n";
+    }
+  }
 ?>
+
+
+
+
+
+
