@@ -1,0 +1,42 @@
+<?php
+
+$color[0] = 'red'."\n";
+$color[4] = 'green'."\n";
+$color[] = 'yellow'."\n";
+//echo $color[2];	
+echo $color[4];	
+echo $color[5];	
+$state_capitals = array(
+  'Texas' => 'Austin',
+  'Louisiana' => 'Baton Rouge',
+  'North Carolina' => 'Raleigh',
+  'South Dakota' => 'Pierre');
+  $capital_of_texas =$state_capitals['Texas'];
+  echo $state_capitals['Texas'];
+  $state = $state_capitals['North Carolina'];
+  $state_capitals['India']='Delhi';
+  echo $state;
+  print_r($state_capitals);
+  unset($color[0]);
+  unset($state_capitals['Texas']);
+   print_r($state_capitals);
+   echo is_array($color)."\n";
+   echo is_array('tree');
+   if (array_key_exists("India", $state_capitals)){
+     echo $state_capitals["India"]."\n"; 
+   }
+   $stuff = array('colors' => array('red', 'green', 'blue'),
+   'numbers' => array('one', 'two', 'three'));
+   $colors = $stuff['colors'];
+   $color = $stuff['colors'][1];
+   $number = $stuff['numbers'][0];
+  $stuff['numbers'][3] = 'four';
+  echo $stuff['numbers'][3];
+  //questions
+  $i = 1;
+  while($i<=10)
+  {
+    echo $i;
+    $i++;
+  }
+?>
