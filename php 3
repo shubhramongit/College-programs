@@ -55,7 +55,23 @@ $state_capitals = array(
   {
     echo $color . "\n";
   }
-?>
+  $synonyms = array('large' => 'big',
+  'loud' => 'noisy',
+  'fast' => 'rapid');
+  foreach ($synonyms as $key => $value){
+    echo "$key is synonym for $value.\n";
+  }
+  $looking_for = 'red';
+  foreach ($colors as $color)
+  {
+    if($color = $looking_for)
+    {
+      echo "Found $color.\n";
+      break;
+    }
+  }
+  
+  ?>
 
 
 
