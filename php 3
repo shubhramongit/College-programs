@@ -81,6 +81,21 @@ $c=array_combine($fname,$age);
 print_r($c);
 $a1=array_fill(3,4,"blue");
 print_r($a1);
+$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+$result=array_flip($a1);
+print_r($result);
+$a=array("Volvo"=>"XC90","BMW"=>"X5","Toyota"=>"Highlander");
+print_r(array_keys($a));
+$a1=array("red","green");
+$a2=array("blue","yellow");
+print_r(array_merge($a1,$a2));
+$a=array("red","green","blue");
+array_pop($a);
+print_r($a);
+$a=array("red","green");
+array_push($a,"blue","yellow");
+print_r($a);
+
   ?>
 
 
