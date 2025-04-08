@@ -70,7 +70,17 @@ $state_capitals = array(
       break;
     }
   }
-  
+  $age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
+print_r(array_change_key_case($age,CASE_UPPER));
+  $cars=array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
+print_r(array_chunk($cars,2));
+$fname=array("Peter","Ben","Joe");
+$age=array("35","37","43");
+
+$c=array_combine($fname,$age);
+print_r($c);
+$a1=array_fill(3,4,"blue");
+print_r($a1);
   ?>
 
 
