@@ -1,0 +1,15 @@
+<?php
+// Function to check if a number is even
+function isEven($number) {
+    return $number % 2 === 0;
+}
+
+// Test the function with a hardcoded number
+$testNumber = 7; // Replace this with any number you want to test
+if (isEven($testNumber)) {
+    echo "$testNumber is even.\n";
+} else {
+    echo "$testNumber is odd.\n";
+}
+?>
+//accepts a number and returns if it is true and false otherwise
