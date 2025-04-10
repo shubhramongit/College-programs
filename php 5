@@ -1,0 +1,15 @@
+<?php
+// Function to calculate the sum of two numbers
+function calculateSum($num1, $num2) {
+    return $num1 + $num2;
+}
+
+// Input values
+$num1 = 5; // Replace with your desired first number
+$num2 = 10; // Replace with your desired second number
+
+// Call the function and display the result
+$result = calculateSum($num1, $num2);
+echo "The sum of $num1 and $num2 is: $result\n";
+?>
+//takes 2num and returns their sum call the function with user input 
