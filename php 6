@@ -1,0 +1,19 @@
+<?php
+// Function to check if a string is a palindrome
+function isPalindrome($string) {
+    // Remove spaces and convert to lowercase for case-insensitive comparison
+    $processedString = strtolower(str_replace(' ', '', $string));
+    
+    // Check if the string is equal to its reverse
+    return $processedString === strrev($processedString);
+}
+
+// Test the function with a hardcoded string
+$testString = "madam"; // Replace this with any string you want to test
+if (isPalindrome($testString)) {
+    echo "'$testString' is a palindrome.\n";
+} else {
+    echo "'$testString' is not a palindrome.\n";
+}
+?>
+// create a function on php that checks whther a given string is a palindrome or not
