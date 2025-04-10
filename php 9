@@ -1,0 +1,11 @@
+<?php
+// Function to print a greeting message
+function sayHello($name) {
+    echo "Hello $name!";
+}
+
+// Test the function with a hardcoded name
+$name = "chutiya = ritesh"; // Replace with any name you'd like to test
+sayHello($name);
+?>
+//define a function that accepts a name and prionts "Hello [Name]!" on the page
