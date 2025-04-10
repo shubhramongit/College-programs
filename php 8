@@ -1,0 +1,22 @@
+<?php
+// Function to calculate the average of numbers in an array
+function calculateAverage($numbers) {
+    // Check if the array is empty to avoid division by zero
+    if (empty($numbers)) {
+        return 0;
+    }
+    
+    // Calculate the sum and divide by the count of numbers
+    $sum = array_sum($numbers);
+    $count = count($numbers);
+    return $sum / $count;
+}
+
+// Test the function with a hardcoded array
+$testArray = [10, 20, 30, 40, 50]; // Replace with your own array of numbers
+$average = calculateAverage($testArray);
+
+// Display the result
+echo "The average of the numbers is: $average\n";
+?>
+//create a php function that takes an array of numbers and returns the average of the numbers
