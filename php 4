@@ -1,0 +1,21 @@
+<?php
+echo fix_names("WILLIAM","gatES");
+function fix_names($n1,$n2){
+  $n1=ucfirst(strtolower($n1));
+   $n2=ucfirst(strtolower($n2));//
+   return $n1." ".$n2;
+}
+function fix1_names(){
+  $n1 = ucfirst(strtolower("WILLIAM"));
+  $n2 = ucfirst(strtolower("gatES"));
+  return $n1." ".$n2;
+}
+echo fix2_names();
+function fix2_names(){
+  $n1 = ucfirst(strtolower("WILLIAM"));
+  $n2 = ucfirst(strtolower("gatES"));
+  echo $n1." ".$n2; 
+}
+fix2_names();
+
+?>
